@@ -47,13 +47,20 @@ public class SecondHomeWork {
 
         int beginningIndexOfLastWord = lastIndexOfSpace + 1;
         System.out.println("Beginning index for last word is- "+ beginningIndexOfLastWord);
-        String lastWord = myStatement.substring(12);
+        String lastWord = myStatement.substring(beginningIndexOfLastWord);
         System.out.println("1. Last word of the sentence is- " + lastWord);
+
+        String [] lastIndex = myStatement.split(" ");
+        System.out.println(Arrays.toString(lastIndex));
+        int lastIndexFinal = lastIndex.length - 1;
+        System.out.println(lastIndex[lastIndexFinal]);
 
         // Display the total number of words in the myStatement
 
-        int totalNumberOfWords = myStatement.length();
-        System.out.println("2. Total number of words in myStatement- "+ totalNumberOfWords);
+        String [] afterSplit = myStatement.split(" ");
+        int totalNumberOfWordsFinal = afterSplit.length;
+        System.out.println("2. Total number of words " + totalNumberOfWordsFinal);
+
 
         //Replace all the "r: characters with "f" characters
 
@@ -65,8 +72,8 @@ public class SecondHomeWork {
         String myFirstName2 = "Shaira";
         System.out.println("My first Name- " + myFirstName2);
 
-        int lengthOfName = myFirstName2.lastIndexOf(" ");
-        System.out.println("Length of my first name without using length method of string is- " + lengthOfFirstName);
+        int lengthOfName = myFirstName2.lastIndexOf("");
+        System.out.println("Length of my first name without using length method of string is- " + lengthOfName);
 
 
 
