@@ -21,28 +21,28 @@ public class ThirdHomeWork {
             //Your percentage: XX.yy and your grade is: A
 
 
-        double studentScore = 97;
+        double studentScore = 91;
         double maxScore = 200;
 
         float scorePercentage = (float) ((studentScore*100)/maxScore);
 
 
-        if (scorePercentage>91 && scorePercentage<= 100){
+        if (scorePercentage>=91 && scorePercentage<= 100){
             System.out.println("Your percentage "+ "=> " + scorePercentage + "%" +"\n"+
                     "Your grade is: A");}
-        else if(scorePercentage>81 && scorePercentage<= 90) {
+        else if(scorePercentage>=81 && scorePercentage<= 90) {
             System.out.println("Your percentage " + "=> " + scorePercentage +"%" + "\n" +
                     "Your grade is: B");}
-        else if(scorePercentage>71 && scorePercentage<= 80) {
+        else if(scorePercentage>=71 && scorePercentage<= 80) {
             System.out.println("Your percentage " + "=> " + scorePercentage +"%" + "\n" +
                     "Your grade is: C");}
-        else if(scorePercentage>61 && scorePercentage<= 70) {
+        else if(scorePercentage>=61 && scorePercentage<= 70) {
             System.out.println("Your percentage " + "=> " + scorePercentage +"%" + "\n" +
                     "Your grade is: D");}
-        else if(scorePercentage>51 && scorePercentage<= 60) {
+        else if(scorePercentage>=51 && scorePercentage<= 60) {
             System.out.println("Your percentage " + "=> " + scorePercentage +"%" + "\n" +
                     "Your grade is: E");}
-        else if(scorePercentage<=51) {
+        else if(scorePercentage<=50) {
             System.out.println("Your percentage " + "=> " + scorePercentage +"%" + "\n" +
                     "Your grade is: F");}
         else {
@@ -72,15 +72,17 @@ public class ThirdHomeWork {
 
                 System.out.println("Drive Car");
 
-                switch (driveType) {
-                    case "Snow":
+                switch (driveType.toLowerCase()) {
+                    case "snow":
                         System.out.println("You are on Snow mode");
                         break;
-                    case "Sport":
+                    case "sport":
                         System.out.println("You are on Sport mode");
                         break;
-                    case "Eco":
+                    case "eco":
                         System.out.println("You are on Eco mode");
+                    default:
+                        System.out.println("Please provide correct drive type");
                 }
             }
 
@@ -128,7 +130,9 @@ public class ThirdHomeWork {
             }
 
 
-            }
+
+
+        }
 
 
 
