@@ -98,7 +98,7 @@ public class SecondTest {
             }
 
 
-            String monthName = "decmber";
+            String monthName = "december";
             String seasonName = "";
 
             String updatedMonthName = monthName.toLowerCase();

@@ -123,6 +123,9 @@ public class ClassTest {
         }
         // using simple formula
 
+        // create a method to calculate sum of values in a given int array
+
+
 
         for (int iStudent =0; iStudent<students.length; iStudent++){
             if (students[iStudent].toLowerCase().contains(keyword.toLowerCase())){

@@ -39,7 +39,10 @@ public class FourthHomeWork {
         for (String words : splitLine) {
             newLine += words.substring(0, 1).toUpperCase() + words.substring(1) + " "; // words.substring(1).toLowerCase()+ " ";
         }
-        System.out.println("Line (After modification) : " + newLine);
+
+        line = newLine;
+
+        System.out.println("Line (After modification) : " + line);
 
 
     /**
@@ -52,7 +55,7 @@ public class FourthHomeWork {
 
        System.out.println("Message : " + message);
 
-       for (int i = message.toLowerCase().length() - 1 ; i >= 0; i--) {
+       for (int i = message.length() - 1 ; i >= 0; i--) {
            reverseMessage += message.charAt(i);
        }
        System.out.println("Message in reverse: " + reverseMessage);
@@ -62,7 +65,7 @@ public class FourthHomeWork {
          * Check if word is palindrome
          */
 
-        String word = "Level"; 
+        String word = "Level";
         String newWord = "";
 
         for (int iW = word.length() - 1; iW >= 0; iW--){
