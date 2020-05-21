@@ -6,7 +6,7 @@ public class PrinterTemplateForTest {
 
     String name = "general";
     int toner = 50;
-    int pages = 10;
+    int pages = 11;
     String tonerStatement = "None";
     String pageStatement = "None";
     int maxTonerLimit = 100;
@@ -92,11 +92,11 @@ public class PrinterTemplateForTest {
     public String printerSummary() {
         String printSum = "";
         if (toner > 10 && pages > 10) {
-            printSum = "Printer summary is- " + "\n" + "Toner level: " + toner + "\n" + "Page count in tray: " + pages + " pages.";
-        } else if (toner < 10) {
-            printSum = "Current toner level is: " + toner + ". You can print maximum " + toner + " pages." + "\n" + "Please add toner.";
-        } else if ( pages < 10){
-            printSum = "Currently available page is: " + pages + ". You can print maximum " + pages + " pages." + "\n" + "Please add pages.";
+            printSum = "Printer summary is- " + "\n" + "Toner level: " + toner + "\n" + "& Page count in tray: " + pages + " pages.";
+        } else if (toner <= 10 && pages > 10) {
+            printSum = "Current toner level is: " + toner + " & page count in tray: " + pages + " pages." +"\n" + "You can print maximum " + toner + " pages." + "\n" + "Please add toner.";
+        } else if ( pages <= 10 && toner > 10){
+            printSum = "Currently available page is: " + pages + " & toner level is: " + toner  +"\n" +"You can print maximum " + pages + " pages." + "\n" + "Please add pages.";
         }else {
             printSum = "Printer summary is- " + "\n" + "Toner level: " + toner + "\n" + "Page count in tray: " + pages + " pages." + "Please add toner & page";
         }
@@ -112,12 +112,12 @@ public class PrinterTemplateForTest {
             if (printSinglePage) {
                     pages -= numberOfPages;
                     toner -= numberOfPages;
-                    printStatement = "You successfully printed " + numberOfPages + " pages. ";
+                    printStatement = "You have successfully printed " + numberOfPages + " pages. ";
                 }
                 else if (!printSinglePage) {
                     pages = pages - (numberOfPages/2);
                     toner -= numberOfPages;
-                    printStatement = "After successfully printing of " + numberOfPages + " pages.";
+                    printStatement = "You have successfully printed " + numberOfPages + " pages.";
                 }
             }
         else if (numberOfPages < 0){

@@ -10,14 +10,15 @@ public class SixthHomeWork {
             System.out.println(p1.getPrinterName());
 
             p1.addToner(1);
-            p1.addToner(-100);
-            p1.addToner(110);
-            p1.addToner(10);
-            System.out.println(p1.getTonerLevel());
+            //p1.addToner(-100);
+            //p1.addToner(110);
+            //p1.addToner(10);
+            //System.out.println(p1.getTonerLevel());
+            System.out.println(p1.printerSummary());
             p1.addPages(75);
             p1.addPages(-100);
             p1.addPages(76);
-            System.out.println(p1.pageAvailability());
+            //System.out.println(p1.pageAvailability());
             System.out.println(p1.printerSummary());
             System.out.println(p1.printPages(true, 10));
             System.out.println(p1.printPages(false, 12));
