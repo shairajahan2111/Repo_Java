@@ -86,8 +86,9 @@ public class FifthHomeWork {
 
         for (double number: numbers) {
             total += number;
-            avg = total/numbers.length;
-        }return avg;
+        }
+        avg = total/numbers.length;
+        return avg;
     }
 
     // Question: 3
