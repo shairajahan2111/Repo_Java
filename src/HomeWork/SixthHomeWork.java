@@ -21,7 +21,9 @@ public class SixthHomeWork {
             //System.out.println(p1.pageAvailability());
             System.out.println(p1.printerSummary());
             System.out.println(p1.printPages(true, 10));
-            System.out.println(p1.printPages(false, 12));
+            System.out.println(p1.printerSummary());
+            System.out.println(p1.printPages(false, 11));
+            System.out.println(p1.printerSummary());
             System.out.println(p1.printPages(false, -10));
 
         }}

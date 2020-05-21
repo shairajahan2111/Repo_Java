@@ -115,7 +115,7 @@ public class PrinterTemplateForTest {
                     printStatement = "You have successfully printed " + numberOfPages + " pages. ";
                 }
                 else if (!printSinglePage) {
-                    pages = pages - (numberOfPages/2);
+                    pages = pages - (numberOfPages/2 +1);
                     toner -= numberOfPages;
                     printStatement = "You have successfully printed " + numberOfPages + " pages.";
                 }
