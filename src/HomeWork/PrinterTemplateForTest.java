@@ -34,7 +34,7 @@ public class PrinterTemplateForTest {
             System.out.println("System doesn't allow negative addition to toner level.");
         } else if (toner < maxTonerLimit && toner + addToner > maxTonerLimit) {
             System.out.println(tonerStatement = "Toner limit is: " + maxTonerLimit + ", current toner level is: " + toner + ". You can add maximum: " + (100 - toner));
-        } else if (toner + addToner < maxTonerLimit) {
+        } else if (toner + addToner <= maxTonerLimit) {
             toner = toner + addToner;
             System.out.println(tonerStatement = "After latest addition of " + addToner + ", current Toner level is: " + toner);
         } else {

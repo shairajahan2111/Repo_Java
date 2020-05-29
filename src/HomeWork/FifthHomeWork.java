@@ -63,7 +63,6 @@ public class FifthHomeWork {
                 position = i + 1;
                 break;
             }
-
         }
             if (position > 0) {
 

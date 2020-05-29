@@ -69,7 +69,20 @@ public class FirstHomeWork {
         System.out.println("e. K = 5/9 (° F - 32) + 273"+ "= " + kTemp4 + "°");
 
 
-
+        // find the perfect square root from int array
+        int [] intArray = {12, 13, 32, 81, 64, 144, 93, 78, 34,};
+        boolean breakOuterLoop = false;
+        for (int num = 0; num< 20; num++){
+            for (int i = 0; i<intArray.length; i++){
+                if (intArray[i] == (num*num)) {
+                    System.out.println(num + "-->" + intArray[i]);
+                    breakOuterLoop = true;
+                    break;
+                }
+            }
+            if (breakOuterLoop){
+                break;
+            }
 
 
 
@@ -80,4 +93,4 @@ public class FirstHomeWork {
 
 
     }
-}
+}}

@@ -26,7 +26,13 @@ public class SixthHomeWork {
             System.out.println(p1.printerSummary());
             System.out.println(p1.printPages(false, -10));
 
-        }}
+        }
+
+
+
+
+
+}
 
 
 
