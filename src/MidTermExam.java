@@ -1,22 +1,22 @@
 import java.util.Arrays;
 
-public class MidTermExam {
+public class MidTermExam {}
 
-    public static void main(String[] args) {
+  /* public static void main(String[] args)
 
-        /**
-         * Question 1:
-         * Create a method to return an array after remove a specific value from a given int array.
-         * Original array: {32, 14, 24, 98, 24, 56, 148, 24, 78, 24}    Remove: 24
-         * Returned array: {32, 14, 98, 56, 148, 78}
-         *
-         * Input array:     {1, 2, 4, 3, 1, 6, 1}    Remove: 11
-         * Returned Array:  {1, 2, 4, 3, 1, 6, 1}
-         *
-         */
+     /*  /**
+        * Question 1:
+        * Create a method to return an array after remove a specific value from a given int array.
+        * Original array: {32, 14, 24, 98, 24, 56, 148, 24, 78, 24}    Remove: 24
+        * Returned array: {32, 14, 98, 56, 148, 78}
+        *
+        * Input array:     {1, 2, 4, 3, 1, 6, 1}    Remove: 11
+        * Returned Array:  {1, 2, 4, 3, 1, 6, 1}
+        *
+        */
 
 
-        int[] inputArray = {32, 14, 24, 98, 24, 56, 148, 24, 78, 24};
+        /*int[] inputArray = {32, 14, 24, 98, 24, 56, 148, 24, 78, 24};
         int remove = 24;
         System.out.println(Arrays.toString(removeElementFromArray(inputArray, remove)));
 
@@ -24,27 +24,30 @@ public class MidTermExam {
         System.out.println(missingPositiveInteger(array));
 
         ticketingSystem(79);
-        
+
 
 
 
     }
 
 
-    public static int [] removeElementFromArray (int [] array, int elementToRemove){
-
-        int [] newArray = {};
+   /* public static int [] removeElementFromArray (int [] array, int elementToRemove){
+        int temp = 0;
+        int [] newArray = new int [array.length];
         for (int i = 0; i< array.length; i++){
             if (array[i] != elementToRemove){
-                newArray[i]=array[i];
-            }break;
+                newArray[temp]=array[i];
+                temp++;
+            }
         }
         return newArray;
     }
 
 
 
-        /**
+
+
+    /**
          * Question 2:
          * Create a method to return missing smallest positive integer (greater than 0) from given array.
          * Example:
@@ -58,9 +61,19 @@ public class MidTermExam {
          * 	Method should return : 4
          */
 
-        public static int missingPositiveInteger (int [] array) {
+       /* public static int missingPositiveInteger (int [] array) {
+
 
             int missingValue = 0;
+            while(true){
+                boolean found = false;
+                int checkFor = 0;
+
+            }
+
+
+
+
             // sorting the array by ascending order
 
             for (int i = 0; i < array.length - 1; i++) {
@@ -74,10 +87,11 @@ public class MidTermExam {
                 }
             }
             int[] sortedArray = array;
+
             for (int i = 0; i < sortedArray.length; i++) {
                 for (int j = 1; j < sortedArray.length; i++) {
                     if (sortedArray[i] > 0 && (sortedArray[j] != sortedArray[i] + 1)) {
-                        missingValue = sortedArray(i);
+                     // missingValue = sortedArray(i);
                     }
                 }
 
@@ -110,7 +124,7 @@ public class MidTermExam {
          *
          */
 
-    public static String ticketingSystem (double userSpeed){
+   /* public static String ticketingSystem (double userSpeed){
         String result = "";
         double speedLimit = 70;
         double point = 0;
@@ -136,10 +150,7 @@ public class MidTermExam {
 
         }
         return result;
-    }
+    }*/
 
 
 
-
-
-}
