@@ -3,6 +3,7 @@ package FirstTest;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
+import java.util.Scanner;
 
 public class ClassWork4June {
 
@@ -56,8 +57,24 @@ public class ClassWork4June {
     }
 
         System.out.println("Enter Student ID & Score");
-    //  Scanner HashMap<String,Integer> newScore = new Scanner(System.in);
+
+
+        Scanner scanner = new Scanner(System.in);
+        HashMap <String, Integer> scoreWithScanner = new HashMap<>();
+
+        for (int i = 0; i< 5; i++) {
+            System.out.println("Enter your student name");
+            String studentName = scanner.next();
+            System.out.println("Enter a score");
+            int studentScore = scanner.nextInt();
+            scoreWithScanner.put(studentName, studentScore);
+        }
+
+        System.out.println(scoreWithScanner);
 
 
 
-}}
+        }
+
+
+}
